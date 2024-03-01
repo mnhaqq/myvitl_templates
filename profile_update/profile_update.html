@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="profile_update.css">
+    <title>Update Profile</title>
+</head>
+
+<body>
+    <div class="profile">
+        <div class="logo">
+            <img src="../logo.svg" alt="logo">
+        </div>
+
+        <h2>UPDATE PROFILE</h2>
+        <form action="" method="post" class="update-profile">
+                <div class="picture">
+                    <input type="file" name="profile-picture" id="profile-picture" required>
+                    <label for="profile-picture" class="profile-pic"><img src="camera icon.png" alt="camera"></label>
+                </div>
+
+                <div class="text-input">
+                    <div class="name-update">
+                        <div>
+                            <label for="surname">SURNAME</label>
+                            <input type="text" name="surname" id="surname" required>
+                        </div>
+
+                        <div>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname" required>
+                        </div>
+                    </div>
+
+                    <div class="location">
+                        <div class="address">
+                            <label for="address">ADDRESS</label>
+                            <input type="text" name="address" id="address" required>
+                        </div>
+
+                        <div class="city">
+                            <label for="city">CITY</label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+
+                        <div class="nationality">
+                            <label for="nationality">NATIONALITY</label>
+                            <input type="text" name="nationality" id="nationality" required>
+                        </div>
+                    </div>
+                    
+                    <div class="extra-details">
+                        <div class="gender">
+                            <fieldset>
+                                <legend>GENDER</legend>
+                                
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">MALE</label>
+
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">FEMALE</label>
+                            </fieldset>
+                        </div>
+
+                        <div class="dob">
+                            <label for="dob">DATE OF BIRTH</label>
+                            <input type="date" name="dob" id="dob">
+                        </div>
+
+                        <div class="phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirm">
+                    <button type="submit">UPDATE PROFILE</button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

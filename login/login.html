@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="picture">
+            <img src="login_image.jpg" alt="Doctor smiling at patient">
+        </div>    
+
+        <div class="login">
+            <img src="../logo.svg" alt="logo" class="logo">    
+            <h2>LOGIN</h2>
+
+            <form action="" method="post" class="form">
+                <div class="user-type">
+                    <div>
+                        <input type="radio" name="user_type" id="patient">
+                        <label for="patient">Patient</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="user_type" id="doctor">
+                        <label for="doctor">Doctor</label>
+                    </div>
+                </div>
+
+                <input type="text" name="username" id="username" placeholder="Enter your username">
+                <input type="password" name="user_pwd" id="user_pwd" placeholder="Enter password">
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p>No Account? <a href="">Sign Up Here</a></p>
+        </div>
+    </div>
+</body>
+</html>
